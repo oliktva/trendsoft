@@ -1,7 +1,7 @@
-h1 Тестовое задание для TrendSoft
+## Тестовое задание для TrendSoft
 =================================
-1. Демо версия http://oliktva.github.io/trendsoft/
-2. Для сборки проекта из репозитория:
+Демо версия http://oliktva.github.io/trendsoft/
+Для сборки проекта из репозитория:
 * npm install
 * npm run build
 * npm run start
