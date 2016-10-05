@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <header class="main-header">
+        <div class="main-header__wrapper container">
+          <a class="main-header__logo" href='/'>
+            <img src="img/logo.png" alt="TrendSoft">
+          </a>
+          <div class="main-header__company">
+            <a class="main-header__link main-header__link--bold" href="#">Barcelona Design</a>
+          </div>
+          <div class="main-header__user">
+            <a class="main-header__link" href="#">Petr_Osmanov</a>
+          </div>
+        </div>
+      </header>
+      <main class="main-block">
+        <div class="main-block__wrapper container">
+          <div class="left-panel">
+            <button class="left-panel__item btn btn--orange">Добавить задачу</button>
+            <nav class="left-panel__item left-nav">
+              <ul class="left-nav__list">
+                <li class="left-nav__item">
+                  <a href="#" class="left-nav__text left-nav__text--gray">Сводная<br>информация</a>
+                </li>
+                <li class="left-nav__item">
+                  <span class="left-nav__text left-nav__text--black">Все задачи</span>
+                  <ul class="left-nav__mini-list">
+                    <li class="left-nav__mini-item">
+                      <a href="#">Открытые</a>
+                    </li>
+                    <li class="left-nav__mini-item">
+                      <a href="#">Выполненные</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="left-nav__item">
+                  <a href="#" class="left-nav__text left-nav__text--orange">Отчеты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="right-panel">
+            <div class="right-panel__header-wrapper">
+              <img src="img/company.png" width="38" height="38" alt="">
+              <h1 class="right-panel__header">Barcelona Design</h1>
+            </div>
+            <div class="data">
+              <div class="data__header-wrapper">
+                <h2 class="data__header">Открытые задачи</h2>
+                <span class="data__count">0</span>
+                <a class="data__add" href="#">Добавить задачу</a>
+              </div>
+              <div class="data__result">
+                <div class="data__filter form">
+                  <select class="form__select" id="dateSelect">
+                    <option>Ноябрь, 2014</option>
+                    <option selected>Декабрь, 2014</option>
+                  </select>
+                  <select class="form__select form__select--long"  id="typeSelect">
+                    <option selected>Открытые задачи</option>
+                      <option>Закрытые задачи</option>
+                  </select>
+                  <input class="data__filter-last form__input form__input--search" type="text" placeholder="Поиск задач по проекту">
+                </div>
+                <table class="data-table" id="dataTable">
+                  <tr class="data-table__header">
+                    <th>Т</th>
+                    <th>Тикет</th>
+                    <th>Название</th>
+                    <th class="data-table__sort-wrapper">П<span class="data-table__sort"></span></th>
+                    <th>Статус</th>
+                    <th>Решение</th>
+                    <th>Создано</th>
+                    <th>Обновлено</th>
+                    <th>Дедлайн</th>
+                    <th></th>
+                  </tr>
+                </table>
+                <div class="data__pagination">
+                  <div id="pagination-container">
+                  </div>
+                  <div class="data__record-num">
+                    <label>Количество задач:</label>
+                    <a class="data__num data__num--active" href="#">20</a>
+                    <a class="data__num" href="#">50</a>
+                    <a class="data__num" href="#">100</a>
+                    <a class="data__num" href="#">все</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="container main-footer__connect-wrapper">
+          <div class="main-footer__connect main-footer__connect--orange">
+            <h3 class="main-footer__connect-header">Возникли вопросы?</h3>
+            <p class="main-footer__connect-text">
+              Воспользуйтесь формой отправки заявки и мы свяжемся с вами
+            </p>
+            <a class="main-footer__connect-button btn btn--white">Оставить заявку</a>
+          </div>
+          <div class="main-footer__connect main-footer__connect--white">
+            <h3 class="main-footer__connect-header">Или свяжитесь с нами напрямую:</h3>
+            <p class="main-footer__connect-text">
+              г. Москва ул. Викторенко д. 11<br>+7 (499) 502-81-39
+            </p>
+            <a class="main-footer__connect-link">order@trendsoft.ru</a>
+          </div>
+        </div>
+        <div class="main-footer__bottom">
+          <div class="main-footer__bottom-wrapper container">
+            <span class="main-footer__bottom-copyright">© ООО «Трендсофт», 2011-2015</span>
+            <span class="main-footer__bottom-phone">+7 (499) 502-81-39</span>
+            <div class="main-footer__bottom-social">
+              <ul class="main-footer__bottom-social__list">
+                <li  class="main-footer__bottom-social__item">
+                  <a href="#"><img src="img/fb.png" alt="facebook"></a>
+                </li>
+                <li  class="main-footer__bottom-social__item">
+                  <a href="#"><img src="img/vk.png" alt="vkontakte"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/jquery-3.1.1.min.js"></script>
+      <script src="js/pagination.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>

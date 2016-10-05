@@ -1,0 +1,114 @@
+.data {
+  background: @white-color;
+}
+
+.data__header-wrapper {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: center;
+  padding: @table-padding;
+  border-bottom: 1px solid @gray-color-5;
+}
+
+.data__header {
+  font-size: 22px;
+}
+
+.data__count {
+  padding: 0 30px;
+  font-size: 22px;
+  font-family: @font-l;
+  color: @gray-color-4;
+}
+
+.data__add {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  padding-left: 25px;
+  color: @orange-color;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../img/plus.png") no-repeat center center;
+  }
+}
+
+.data__result {
+  padding: 20px 30px;
+}
+
+.data__filter {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+}
+
+.data__filter-last {
+  margin-left: auto;
+}
+
+.paginationjs-page, .paginationjs-ellipsis {
+  display: inline-block;
+  vertical-align: top;
+  height: 28px;
+  width: 28px;
+  margin-right: 10px;
+  text-align: center;
+  color: @black-color;
+  background: @gray-color;
+}
+
+.paginationjs-page a,
+.paginationjs-ellipsis a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+  color: @black-color;
+  background: @gray-color;
+}
+
+.paginationjs-page.active a {
+  color: @white-color;
+  background: @orange-color;
+}
+
+.data__pagination {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  padding-bottom: 8px;
+}
+.data__record-num {
+  margin-left: auto;
+}
+
+.data__record-num label {
+  float: left;
+  padding-right: 10px;
+  margin-top: 5px;
+  color: @gray-color-4;
+}
+
+.data__num {
+  display: inline-block;
+  vertical-align: top;
+  padding-right: 5px;
+  margin-top: 5px;
+  color: @blue-color;
+}
+.data__num:last-child {
+  padding-right: 0;
+}
+
+.data__num--active {
+  color: @black-color;
+}

@@ -1,0 +1,29 @@
+.right-panel {
+  width: @right-panel-width;
+  padding: 30px @side-padding 30px 0;
+}
+
+.right-panel__header-wrapper {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+}
+
+.right-panel__header {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 30px;
+  font-family: @font-b;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    display: block;
+    .triangle();
+  }
+}
