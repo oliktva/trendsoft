@@ -5,4 +5,5 @@
 * npm install
 * npm run build
 * npm run start
+***
 Собранный проект будет располагаться в папке build/
